@@ -1,0 +1,177 @@
+.home {
+    display: grid;
+    grid-template-areas:
+        "aside form"
+        "aside cards";
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 0.5fr 40fr;
+    gap: 3rem;
+}
+
+.home__form {
+    grid-area: form;
+    display: flex;
+}
+
+.home > aside {
+    grid-area: aside;
+    position: fixed;
+    width: auto !important;
+    margin-right: 74%;
+}
+
+.home > section {
+    grid-area: cards;
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/** fomr search */
+.home__search {
+    all: unset;
+    border: 1px solid var(--color-borde);
+    border-right: none;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+}
+.home__search::placeholder {
+    color: var(--text-color1);
+}
+
+.home__btn {
+    all: unset;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 2.6rem;
+    background-color: var(--principal-color);
+}
+
+.home__btn:active {
+    background-color: #dc4d4d;
+}
+
+.iconSearch {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/*^ form filter */
+/** filter price */
+
+.acordionHeader {
+    background-color: black;
+}
+
+.filterInpunt {
+    display: flex;
+}
+
+.filterInpunt > label {
+    width: 60px;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    color: var(--text-color2);
+}
+
+.filterInpunt > input {
+    all: unset;
+    border: 1px solid var(--color-borde);
+    height: 2rem;
+    width: 100%;
+    padding-left: 0.8rem;
+}
+
+.filter__btnContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.filter__btnContainer > button {
+    all: unset;
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--principal-color);
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+
+.filter__btnContainer > button:active {
+    background-color: #dc4d4d;
+}
+
+/** filter category */
+
+.filter__list {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.9rem;
+}
+
+.filter__list li {
+    list-style: none;
+    cursor: pointer;
+    color: var(--text-color2);
+}
+
+/** CARD PRODUCT */
+
+.card {
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    min-width: 12rem;
+    width: 16rem;
+    cursor: pointer;
+}
+
+.card__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    border-bottom: 1px solid var(--color-borde);
+}
+.card__header > img {
+    width: 10rem;
+}
+
+.card__data {
+    padding: 1rem 1rem 2rem 1rem;
+    height: 12rem;
+}
+
+.card__data span {
+    color: var(--text-color2);
+}
+
+.card__btn {
+    all: unset;
+    position: absolute;
+    z-index: 10;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--principal-color);
+    border-radius: 95px;
+    text-align: center;
+    line-height: 2.5rem;
+    right: 1.3rem;
+    bottom: 1.5rem;
+}
+
+.cart__icon {
+    font-size: 1.2rem;
+    color: white;
+}

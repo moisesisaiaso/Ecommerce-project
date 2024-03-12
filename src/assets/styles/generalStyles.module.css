@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    --principal-color: #f85555;
+    --color-borde: #dcd9d9;
+    /* color fondos */
+    --fondo-extra1: #50504f;
+    --fondo-extra2: #3c3c3b;
+    /* color texto */
+    --text-color1: #dcd9d9;
+    --text-color2: #515151;
+    --text-color3: #0f172a;
+    /* color icon nav */
+    --color-icon: #b0b2b0;
+}
+
+@font-face {
+    font-family: YantramanavRegular;
+    src: url(../fonts/Yantramanav-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: YantramanavMedium;
+    src: url(../fonts/Yantramanav-Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: YantramanavBold;
+    src: url(../fonts/Yantramanav-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: YantramanavBlack;
+    src: url(../fonts/Yantramanav-Black.ttf) format("truetype");
+}
+
+body {
+    font-family: YantramanavRegular, sans-serif;
+}
+
+main {
+    padding: 7.5rem 1rem 1rem 1rem;
+}
+
+/** NAVBAR */
+.navbar {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    padding-left: 2rem;
+    border: 1px solid var(--color-borde);
+    background-color: #ffffff;
+}
+
+.navbar__logo {
+    all: unset;
+    font-family: YantramanavBold;
+    font-size: 2rem;
+    color: #f85555;
+    cursor: pointer;
+}
+
+.navbar__containerList {
+    flex-grow: 0.5;
+    height: 100%;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__list li {
+    flex-grow: 1;
+    height: 100%;
+    border-left: 1px solid var(--color-borde);
+}
+
+.navbar__list li a {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.option__icon {
+    font-size: 1.4rem;
+    color: var(--color-icon);
+}
+
+/** FOOTER */
+
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    background-color: var(--fondo-extra2);
+    padding: 3rem 0;
+    z-index: 2;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-family: YantramanavMedium;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    column-gap: 1rem;
+    list-style: none;
+}
+
+footer ul li,
+footer ul li a {
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 95px;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--fondo-extra1);
+}
+
+.socialIcons {
+    font-size: 1.2rem;
+    color: white;
+}
