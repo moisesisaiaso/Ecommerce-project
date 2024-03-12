@@ -67,7 +67,7 @@ main {
 }
 
 .navbar__containerList {
-    flex-grow: 0.5;
+    flex-grow: 0.9;
     height: 100%;
 }
 
@@ -104,6 +104,10 @@ main {
     .navbar,
     .navbar__list li {
         border: none;
+    }
+
+    .navbar {
+        padding: 0 1.5rem;
     }
 }
 

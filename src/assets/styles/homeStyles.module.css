@@ -118,11 +118,6 @@
     margin-bottom: 2.9rem;
 }
 
-.filter__container {
-    max-width: 50rem;
-    width: auto;
-}
-
 .filter__list li {
     list-style: none;
     cursor: pointer;
@@ -204,5 +199,9 @@
 
     .home > section {
         grid-area: cards;
+    }
+
+    .home__btn {
+        width: 15%;
     }
 }
