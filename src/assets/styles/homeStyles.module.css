@@ -16,7 +16,6 @@
 .home > aside {
     grid-area: aside;
     position: fixed;
-    width: auto !important;
     margin-right: 74%;
 }
 
@@ -119,6 +118,11 @@
     margin-bottom: 2.9rem;
 }
 
+.filter__container {
+    max-width: 50rem;
+    width: auto;
+}
+
 .filter__list li {
     list-style: none;
     cursor: pointer;
@@ -174,4 +178,31 @@
 .cart__icon {
     font-size: 1.2rem;
     color: white;
+}
+
+@media screen and (max-width: 599px) {
+    .home {
+        grid-template-areas:
+            "form"
+            "aside"
+            "cards";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        gap: 3rem;
+    }
+
+    .home__form {
+        grid-area: form;
+    }
+
+    .home > aside {
+        grid-area: aside;
+
+        margin: 0;
+        position: sticky;
+    }
+
+    .home > section {
+        grid-area: cards;
+    }
 }

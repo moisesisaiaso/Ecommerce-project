@@ -2,7 +2,7 @@ import { AccordionBody, AccordionHeader, AccordionItem, UncontrolledAccordion } 
 
 import homeStyles from "../../assets/styles/homeStyles.module.css";
 import { useSelector } from "react-redux";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const ProductFiltering = ({ setShowProducts }) => {
     const fromInput = useRef();
@@ -38,7 +38,7 @@ export const ProductFiltering = ({ setShowProducts }) => {
             stayOpen
             className={homeStyles.filter__container}
         >
-            <AccordionItem>
+            <AccordionItem className={homeStyles.filter__container}>
                 <AccordionHeader targetId="1">Price</AccordionHeader>
                 <AccordionBody accordionId="1">
                     <form onSubmit={handleFilteByPrice}>

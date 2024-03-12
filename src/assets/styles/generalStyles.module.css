@@ -100,6 +100,13 @@ main {
     color: var(--color-icon);
 }
 
+@media screen and (max-width: 599px) {
+    .navbar,
+    .navbar__list li {
+        border: none;
+    }
+}
+
 /** FOOTER */
 
 footer {
