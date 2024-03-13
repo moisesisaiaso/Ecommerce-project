@@ -7,11 +7,12 @@
 }
 
 .product__header {
-    min-width: 90%;
+    width: 100%;
 }
 
 .product__header > ul {
     display: flex;
+    justify-content: center;
     padding: 0;
     align-items: center;
     list-style: none;
@@ -52,4 +53,17 @@
     width: 100%;
     align-content: start;
     gap: 3rem;
+}
+
+@media screen and (max-width: 478px) {
+    .header__title {
+        flex-basis: 16.5rem;
+        height: 3rem;
+        background-color: brown;
+    }
+
+    .product__header > ul::before {
+        bottom: 1.2rem;
+        left: 5.2rem;
+    }
 }

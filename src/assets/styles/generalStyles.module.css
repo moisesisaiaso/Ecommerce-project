@@ -41,7 +41,7 @@ body {
 }
 
 main {
-    padding: 7.5rem 1rem 1rem 1rem;
+    padding: 7.5rem 1.5rem 1rem 1.5rem;
 }
 
 /** NAVBAR */
@@ -67,7 +67,7 @@ main {
 }
 
 .navbar__containerList {
-    flex-grow: 0.9;
+    flex-grow: 0.5;
     height: 100%;
 }
 
@@ -108,6 +108,14 @@ main {
 
     .navbar {
         padding: 0 1.5rem;
+    }
+
+    .navbar__logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar__containerList {
+        flex-grow: 0.8;
     }
 }
 

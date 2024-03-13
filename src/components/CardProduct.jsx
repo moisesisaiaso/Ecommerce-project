@@ -21,12 +21,12 @@ export const CardProduct = ({ product }) => {
                     </header>
                     <div className={homeStyles.card__data}>
                         <article className={homeStyles.data__name}>
-                            <span>{brand}</span>
+                            <span className={homeStyles.data__brand}>{brand}</span>
                             <h5>{title}</h5>
                         </article>
                         <article className={homeStyles.data__price}>
                             <span>Price</span>
-                            <h5>{price}</h5>
+                            <h5>$ {price}</h5>
                         </article>
                     </div>
                 </div>
