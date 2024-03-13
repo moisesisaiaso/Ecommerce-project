@@ -57,13 +57,12 @@
 
 @media screen and (max-width: 478px) {
     .header__title {
-        flex-basis: 16.5rem;
+        flex-basis: 12.2rem;
         height: 3rem;
-        background-color: brown;
     }
 
     .product__header > ul::before {
         bottom: 1.2rem;
-        left: 5.2rem;
+        left: 4.6rem;
     }
 }
